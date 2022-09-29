@@ -29,7 +29,7 @@
       &::after {
         background-color: $color-white;
       }
-    }
+   
     &::after {
       content: "";
       display: inline-block;
@@ -50,6 +50,33 @@
     }
     
 }
+&--green {
+  background-color: $color-primary;
+  color: $color-white;
+  &::after {
+    background-color: $color-primary;
+  }
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+ 
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+}
 .btn-text{
     &:link,
     &:visited{
@@ -62,10 +89,14 @@
 
     }
     &:hover{
-
+      background-color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(-2px);
+      color: $color-white;
     }
     &:active{
-
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(0);
     }
    
 }
