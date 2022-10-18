@@ -21,9 +21,7 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">
-          
-        </span>
+        <span class="navigation__icon"> </span>
       </label>
       <div class="navigation__background">&nbsp;</div>
       <div class="navigation__nav">
@@ -62,7 +60,7 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub"> is where life Happens </span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
 
@@ -171,7 +169,7 @@
 
       <!--Tours-Section -->
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular</h2>
         </div>
@@ -214,7 +212,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -257,7 +255,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -300,7 +298,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -470,12 +468,45 @@
             watching a udemy tutorial from
             <a href="#" class="footer__link">Jonas Schedtmann</a>
             . Copyright &copy; by Lindile from Jonnas Schedt,amm . You are
-            allowed to use this website for personal and commercial use
-            however Give the credits to where its due.
+            allowed to use this website for personal and commercial use however
+            Give the credits to where its due.
           </p>
         </div>
       </div>
     </footer>
+
+    <!--Popup -->
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-teriary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            consectetur adipiscing elit duis. Lectus magna fringilla urna
+            porttitor rhoncus. Nam Libero justo laoreet sit amet cursus sit.
+            Amet mattis vulputate enim nulla aliquet porttitor lacus luctus
+            accumsan. Neque sodales ut etiam sit amet nisl purus in. Lobortis
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Rem veniam quam praesentium
+            dicta officiis, iste placeat autem amet odio molestiae?
+          </p>
+          <a href="#popup" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
     <script src="/index.js"></script>
   </body>
 </html>
